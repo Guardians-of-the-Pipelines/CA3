@@ -16,7 +16,7 @@ test:
 
 run:
 	@echo "Running..."
-	python src/main.py
+	python src/app.py
 	@echo "Done running."
 
 
