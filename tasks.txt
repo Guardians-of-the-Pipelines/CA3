@@ -1,0 +1,15 @@
+Danyal Aziz Memon (i201811)
+    1. Addition of CSS to html files for flask application
+    2. Makefile
+    3. tasks.txt 
+
+Ehtisham ul Hassan (i200462)
+    1. Calculator functionality
+    2. flask application
+    3. Docker file
+
+Muhammad Usman (i200937)
+    1. Creation of repository
+    2. requirements.txt
+    3. docker image
+    4. workflow management
