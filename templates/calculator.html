@@ -2,19 +2,63 @@
 <html>
 <head>
     <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculator-container {
+            background-color: #fff; /* White background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+            text-align: center;
+        }
+        h1 {
+            color: #333; /* Dark gray text */
+        }
+        form {
+            text-align: center;
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff; /* Blue submit button */
+            color: #fff; /* White text */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>Calculator</h1>
-    <form method="POST" action="/calculate">
-        <input type="number" name="num1" placeholder="Enter number 01" required><br>
-        <input type="number" name="num2" placeholder="Enter number 02" required><br>
-        <select name="operation">
-            <option value="add">Add</option>
-            <option value="subtract">Subtract</option>
-            <option value="multiply">Multiply</option>
-            <option value="divide">Divide</option>
-        </select><br>
-        <input type="submit" value="Calculate">
-    </form>
+    <div class="calculator-container">
+        <h1>Calculator</h1>
+        <form method="POST" action="/calculate">
+            <input type="number" name="num1" placeholder="Enter number 1" required><br>
+            <input type="number" name="num2" placeholder="Enter number 2" required><br>
+            <select name="operation">
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select><br>
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
 </body>
 </html>

@@ -2,10 +2,46 @@
 <html>
 <head>
     <title>Calculator Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .result-container {
+            background-color: #fff; /* White background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+            text-align: center;
+        }
+        h1 {
+            color: #333; /* Dark gray text */
+        }
+        p {
+            font-size: 24px; /* Increase font size for result */
+        }
+        a {
+            color: #007bff; /* Blue link color */
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Result</h1>
-    <p>{{ result }}</p>
-    <a href="/">Back to Calculator</a>
+    <div class="result-container">
+        <h1>Result</h1>
+        <p>{{ result }}</p>
+        <a href="/">Back to Calculator</a>
+    </div>
 </body>
 </html>
